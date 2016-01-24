@@ -12,11 +12,14 @@ import android.widget.Toast;
 public class Receiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "Time is up!!!!.",
+        Toast.makeText(context, "Don't Panic Time is up!!!!.",
                 Toast.LENGTH_LONG).show();
         // Vibrate the mobile phone
         Vibrator vibrator = (Vibrator) context
                 .getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(2000);
+        MainActivity m = new MainActivity();
+        m.A("ALARM IS UP ");
     }
+
 }
