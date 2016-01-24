@@ -18,8 +18,5 @@ public class Receiver extends BroadcastReceiver {
         Vibrator vibrator = (Vibrator) context
                 .getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(2000);
-        MainActivity m = new MainActivity();
-        m.A("ALARM IS UP ");
     }
-
 }
